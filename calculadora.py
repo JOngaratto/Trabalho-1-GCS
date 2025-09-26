@@ -19,6 +19,9 @@ def raiz_quadrada(a):
         return "Erro: Número negativo não tem raiz quadrada real!"
     return math.sqrt(a)
 
+def potencia(a, b):
+    return a ** b
+
 def main():
     print("Bem-vindo à Calculadora Simples!")
     print("Escolha a operação:")
@@ -27,6 +30,7 @@ def main():
     print("3 - Multiplicação")
     print("4 - Divisão")
     print("5 - Raiz Quadrada")
+     print("6 - Potência")
 
     operacao = input("Digite o número da operação: ")
 
@@ -45,6 +49,8 @@ def main():
             print("Resultado:", multiplica(a, b))
         elif operacao == '4':
             print("Resultado:", divide(a, b))
+            elif operacao == '6':
+        print("Resultado:", potencia(a, b))
         else:
             print("Operação inválida!")
 
